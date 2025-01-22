@@ -1,0 +1,30 @@
+#home-main {
+	background-image: url("../assets/images/home-background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: calc(100vh - 68px);
+}
+#home-main #content--wrapper {
+	background-image: linear-gradient(
+		to left,
+		rgba(255, 255, 255, 0.3),
+		/* low opacity */ rgba(255, 255, 255, 1) /* high opacity */
+	);
+	height: calc(100vh - 90px);
+}
+#home-main article {
+	padding-top: 10rem;
+	padding-left: 5rem;
+	width: 400px;
+}
+#home-main article p {
+	color: var(--blue);
+	margin-top: 20px;
+	line-height: 26px;
+}
+#home-main article h2 {
+	font-size: 4.2rem;
+	line-height: 5rem;
+	color: var(--blue);
+	text-transform: uppercase;
+}

@@ -1,0 +1,61 @@
+* {
+	font-family: "Nunito", Arial, Helvetica, sans-serif;
+	padding: 0;
+	margin: 0;
+	color: black;
+}
+h2 {
+	font-size: 3rem;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	background-color: white;
+	border-bottom: 1px solid #ddd;
+	padding: 1rem 1rem;
+}
+header #right {
+	display: flex;
+}
+#logo img {
+	width: 50px;
+}
+#search {
+	margin-top: 5px;
+	width: 25rem;
+	height: 20px;
+	background-color: rgb(240, 238, 238);
+	position: relative;
+}
+#search-bar input {
+	border: none;
+	padding: 0.5rem;
+	border-radius: 1rem;
+}
+#search-bar button {
+	position: absolute;
+	right: 16px;
+	top: 22px;
+	border: none;
+	width: 35px;
+	height: 34px;
+	padding: 2px;
+	border-radius: 100%;
+	overflow: hidden;
+}
+#search-bar button img {
+	width: 30px;
+	height: 30px;
+}
+.btn-action {
+	text-transform: uppercase;
+	border: none;
+	color: white;
+	font-weight: bold;
+	background-color: var(--blue);
+}
+.btn-action.normal {
+	margin-top: 40px;
+	padding: 1rem 2rem;
+	font-size: 16px;
+}

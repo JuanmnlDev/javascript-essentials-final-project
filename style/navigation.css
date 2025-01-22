@@ -1,0 +1,16 @@
+#main-navigation {
+	justify-content: right;
+	display: flex;
+	margin-right: 150px;
+}
+#main-navigation a {
+	color: var(--blue);
+	font-weight: 700;
+	padding: 0.8rem 1.5rem;
+	font-size: 14px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#main-navigation a.active {
+	border-bottom: 2px solid var(--blue);
+}

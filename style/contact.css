@@ -1,0 +1,46 @@
+#contact-us-main {
+	background-image: url("../assets/images/home-background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: calc(100vh - 68px);
+}
+#contact-us-main #content--wrapper {
+	background-image: linear-gradient(
+		to left,
+		rgba(255, 255, 255, 0.3),
+		/* low opacity */ rgba(255, 255, 255, 1) /* high opacity */
+	);
+	height: calc(100vh - 90px);
+}
+#contact-us-main #content--wrapper form {
+	width: 600px;
+	padding: 8rem 20px 10px;
+}
+#contact-us-main form h2 {
+	font-size: 3rem;
+	line-height: 5rem;
+	font-weight: 800;
+	color: var(--blue);
+	text-transform: uppercase;
+}
+#contact-us-main #content--wrapper form .form-field {
+	width: 100%;
+	padding: 1rem 0rem;
+}
+#contact-us-main #content--wrapper form .form-field input {
+	height: 35px;
+	border: 1px solid #cecece;
+}
+#contact-us-main #content--wrapper form .form-field label {
+	color: #505050;
+	margin-bottom: 10px;
+	display: block;
+}
+#contact-us-main #content--wrapper form .form-field textarea {
+	border: 1px solid #cecece;
+}
+#contact-us-main #content--wrapper form .form-field input,
+#contact-us-main #content--wrapper form .form-field label,
+#contact-us-main #content--wrapper form .form-field textarea {
+	width: 100%;
+}

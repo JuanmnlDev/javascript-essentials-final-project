@@ -1,1 +1,1 @@
-# javascript-essentials-final-project
+# Javascript Programming Essentials Final Project

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./style/main.css" />
+		<title>Contact us</title>
+	</head>
+	<body>
+		<header>
+			<!-- logo -->
+			<a href="./index.html" id="logo">
+				<img src="./assets/images/plane.png" alt="logo" />
+			</a>
+
+			<div id="right">
+				<!-- Navigation -->
+				<nav id="main-navigation">
+					<a href="./index.html">Home</a>
+					<a href="./about-us.html">About us</a>
+					<a href="./contact-us.html" class="active">Contact us</a>
+				</nav>
+				<div id="search-bar">
+					<input
+						type="text"
+						name="search"
+						id="search"
+						placeholder="Enter a destination or keyword"
+					/>
+					<button>
+						<img src="./assets/images/search.png" />
+					</button>
+				</div>
+			</div>
+		</header>
+		<main id="contact-us-main">
+			<div id="content--wrapper">
+				<form action="#" id="contact-form">
+					<h2>Contact Us</h2>
+					<div class="form-field">
+						<label for="name">Name</label>
+						<input type="text" id="name" name="name" />
+					</div>
+					<div class="form-field">
+						<label for="email">Email</label>
+						<input type="email" name="email" id="email" />
+					</div>
+					<div class="form-field">
+						<label for="message">Message</label>
+						<textarea
+							name="message"
+							id="message"
+							cols="40"
+							rows="10"
+						></textarea>
+					</div>
+					<button class="btn-action normal" type="submit">Submit</button>
+				</form>
+			</div>
+		</main>
+	</body>
+</html>

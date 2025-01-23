@@ -24,7 +24,7 @@ header #right {
 	margin-top: 5px;
 	width: 25rem;
 	height: 20px;
-	background-color: rgb(240, 238, 238);
+	background-color: #f1f1f1;
 	position: relative;
 }
 #search-bar input {
@@ -32,9 +32,9 @@ header #right {
 	padding: 0.5rem;
 	border-radius: 1rem;
 }
-#search-bar button {
+#search-bar button#search-btn {
 	position: absolute;
-	right: 16px;
+	right: 18px;
 	top: 22px;
 	border: none;
 	width: 35px;
@@ -43,7 +43,7 @@ header #right {
 	border-radius: 100%;
 	overflow: hidden;
 }
-#search-bar button img {
+#search-bar button#search-btn img {
 	width: 30px;
 	height: 30px;
 }
@@ -104,4 +104,34 @@ aside a {
 aside a img {
 	width: 100%;
 	height: 40px;
+}
+#search-result ul {
+	background-color: white;
+	position: absolute;
+	padding: 10px;
+	list-style: none;
+	max-height: 100vh;
+	overflow-y: scroll;
+}
+#search-result ul li {
+	margin-bottom: 10px;
+}
+#search-result ul li .search-card {
+	background-color: #f1f1f1;
+	padding: 15px;
+	border-radius: 10px;
+}
+#search-result ul li .search-card img {
+	width: 100%;
+	height: auto;
+}
+#search-result ul li .search-card h3 {
+	font-size: 1.4rem;
+	margin: 6px 0;
+}
+#search-result ul li .search-card .btn-action {
+	padding: 10px 20px;
+	margin-top: 10px;
+	border-radius: 20px;
+	font-size: 12px;
 }

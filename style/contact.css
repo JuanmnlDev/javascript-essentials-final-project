@@ -1,19 +1,6 @@
-#contact-us-main {
-	background-image: url("../assets/images/home-background.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: calc(100vh - 68px);
-}
-#contact-us-main #content--wrapper {
-	background-image: linear-gradient(
-		to left,
-		rgba(255, 255, 255, 0.3),
-		/* low opacity */ rgba(255, 255, 255, 1) /* high opacity */
-	);
-	height: calc(100vh - 90px);
-}
 #contact-us-main #content--wrapper form {
 	width: 600px;
+	margin-left: 100px;
 	padding: 8rem 20px 10px;
 }
 #contact-us-main form h2 {

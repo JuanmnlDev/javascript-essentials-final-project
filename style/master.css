@@ -105,13 +105,19 @@ aside a img {
 	width: 100%;
 	height: 40px;
 }
-#search-result ul {
+.hidden {
+	display: none;
+}
+#search-result {
+	padding-bottom: 40px;
 	background-color: white;
 	position: absolute;
 	padding: 10px;
-	list-style: none;
-	max-height: 100vh;
+	max-height: calc(100vh - 100px);
 	overflow-y: scroll;
+}
+#search-result ul {
+	list-style: none;
 }
 #search-result ul li {
 	margin-bottom: 10px;
@@ -134,4 +140,15 @@ aside a img {
 	margin-top: 10px;
 	border-radius: 20px;
 	font-size: 12px;
+}
+#search-result .reset-btn {
+	margin: 20px auto 0;
+	display: block;
+	padding: 10px;
+	border-radius: 20px;
+}
+#search-result .no-results {
+	text-align: center;
+	margin-top: 10px;
+	width: 380px;
 }

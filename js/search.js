@@ -1,6 +1,10 @@
+// Search functionality
 const search_btn = document.getElementById("search-btn");
 search_btn.addEventListener("click", () => {
 	searchTravelRecomendations(document.getElementById("search").value);
+	const search_result = document.getElementById("search-result");
+	search_result.innerHTML = "";
+	search_result.classList.remove("hidden");
 });
 
 async function searchTravelRecomendations(keyword) {
@@ -31,18 +35,37 @@ async function searchTravelRecomendations(keyword) {
 		...searchResultBeaches,
 	];
 
+	const search_result = document.getElementById("search-result");
+
 	//crete search result list
 	const search_result_list = document.createElement("ul");
 
 	//iterate the results, get the element and add it to the list
-	searchResultTotal.forEach((item) => {
-		search_result_list.appendChild(createCard(item));
+	if (searchResultTotal.length > 0) {
+		searchResultTotal.forEach((item) => {
+			search_result_list.appendChild(createCard(item));
+		});
+
+		//add the list to the DOM
+		search_result.append(search_result_list);
+	} else {
+		const no_results = document.createElement("p");
+		no_results.textContent = "No results found";
+		no_results.classList.add("no-results");
+		search_result.append(no_results);
+	}
+
+	//reset/close button
+	const reset_btn = document.createElement("button");
+	reset_btn.textContent = "Reset / Close";
+	reset_btn.classList.add("btn-action");
+	reset_btn.classList.add("reset-btn");
+	reset_btn.addEventListener("click", () => {
+		search_result.innerHTML = "";
+		search_result.classList.add("hidden");
 	});
 
-	//add the list to the DOM
-	const search_result = document.getElementById("search-result");
-	search_result.innerHTML = "";
-	search_result.append(search_result_list);
+	search_result.append(reset_btn);
 }
 
 function searchDestinations(is_city = true, keyword, data) {

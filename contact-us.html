@@ -33,9 +33,10 @@
 						id="search"
 						placeholder="Enter a destination or keyword"
 					/>
-					<button>
+					<button id="search-btn">
 						<img src="./assets/images/search.png" />
 					</button>
+					<div id="search-result" class="hidden"></div>
 				</div>
 			</div>
 		</header>
@@ -73,9 +74,13 @@
 							rows="10"
 						></textarea>
 					</div>
-					<button class="btn-action normal" type="submit">Submit</button>
+					<button class="btn-action normal" type="submit" id="btn-contact">
+						Submit
+					</button>
 				</form>
 			</div>
 		</main>
+		<script src="./js/search.js"></script>
+		<script src="./js/contact.js"></script>
 	</body>
 </html>
